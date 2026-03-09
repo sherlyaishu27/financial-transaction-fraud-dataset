@@ -1,23 +1,18 @@
 New Measures – Sheet1
 
 1. Total Transactions
-
 Total Transactions = COUNT(Sheet1[type])
 
 2. Total Transaction Amount
-
 Total Transaction Amount = SUM(Sheet1[amount])
 
 3. Average Transaction Amount
-
 Average Transaction Amount = AVERAGE(Sheet1[amount])
 
 4. Total Fraud Transactions
-
 Total Fraud Transactions = SUM(Sheet1[isFraud])
 
 5. Fraud Rate
-
 Fraud Rate = DIVIDE([Total Fraud Transactions], [Total Transactions]) * 100
 New Table 1
 Fraud Transactions Table
@@ -31,53 +26,53 @@ New Measure
 NonFraud Count = COUNT(NonFraud_Transactions[type])
 Dashboard
 1. Financial Transaction Fraud Detection Dashboard
+
 1. Line Chart
-
 Fraud Transactions Over Time
-
 X → Step
 Y → Sum of isFraud
+
 2. Donut Chart
-
 Transaction Distribution by Type
-
 Legend → Type
 Values → Count of Type
+
 3. Pie Chart
-
 Fraud vs Non-Fraud Transactions
-
 Legend → isFraud
 Values → Count of Transactions
+
 4. Card Visuals
 1. Total Transactions
 2. Total Transaction Amount
 3. Total Fraud Transactions
 4. Average Transaction Amount
+
 5. New Slicer
 1. Transaction Type
 2. Fraud Status (isFraud)
+
 Fraud Analysis Dashboard
 1. Card Visuals
 1. Total Fraud Transactions
 2. Fraud Transaction Amount
 3. Fraud Rate
+
 2. Clustered Column Chart
-
 Fraud Amount by Transaction Type
-
 X → Type
 Y → Sum of Amount
 Filter → isFraud = 1
+
 3. Line Chart
-
 Fraud Transactions Over Time
-
 X → Step
 Y → Sum of isFraud
+
 4. Slicers
 1. Fraud Status
 2. Transaction Type
+
 Fraud Investigation Dashboard
 1. Table Visual – Fraud Transactions Table
 Columns →
@@ -89,19 +84,18 @@ NewbalanceOrig
 OldbalanceDest
 NewbalanceDest
 isFraud
+
 2. Clustered Column Chart
-
 Fraud by Transaction Type
-
 X → Type
 Y → Count of isFraud
 Filter → isFraud = 1
+
 3. Column Chart
-
 Fraud Amount Distribution
-
 X → Type
 Y → Sum of Amount
+
 4. Slicers
 1. Transaction Type
 2. Fraud Status
@@ -109,10 +103,7 @@ Y → Sum of Amount
 Clear All Filters Button
 
 Go to:
-
 Insert → Button → Blank
-
 Then:
-
 Format → Action → Turn ON Action
 Type → Clear all slicers
